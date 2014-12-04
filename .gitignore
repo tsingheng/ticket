@@ -1,4 +1,12 @@
-*.class
+.DS_Store
+.settings
+.project
+.classpath
+bin
+logs
+log
+
+target/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
