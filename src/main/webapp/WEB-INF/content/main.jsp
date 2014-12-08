@@ -16,13 +16,10 @@
 			<div class="input-group">
 				 <span class="input-group-addon">出发地</span>
 				 <div class="select-wrapper">
-					<input type="text" id="from"/>
-					<ul class="dropdown-menu" role="menu">
-		              <li><a href="#">Action</a></li>
-		              <li><a href="#">Another action</a></li>
-		              <li><a href="#">Something else here</a></li>
-		              <li class="divider"></li>
-		              <li><a href="#">Separated link</a></li>
+				 	<input type="hidden" name="from" id="from"/>
+					<input type="text" data-id="from" class="station" last=""/>
+					<ul class="dropdown-menu station-select" role="menu">
+		              
 		            </ul>
 				 </div>
 			</div>
@@ -31,14 +28,26 @@
 			<div class="input-group">
 				 <span class="input-group-addon">目的地</span>
 				 <div class="select-wrapper">
-					<input type="text" id="to"/>
+				 	<input type="hidden" name="to" id="to"/>
+					<input type="text" data-id="to" class="station" last=""/>
+					<ul class="dropdown-menu station-select" role="menu">
+		              
+		            </ul>
 				 </div>
 			</div>
 		</div>
 		<div class="btn-wrapper">
 			<a href="javascript:;" class="btn btn-default" id="query">查询</a>
+			<a href="javascript:;" class="btn btn-default" id="chart">趋势图</a>
+			<!-- <a href="javascript:;" class="btn btn-default" id="stop">停止</a> -->
 		</div>
 	</div>
-	<div class="container"></div>
+	<div class="container table-list">
+		
+	</div>
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="${ctx}/js/ticket.js"></script>
+	<script type="text/javascript" src="${ctx}/js/station_name.js"></script>
+	<script type="text/javascript" src="${ctx}/js/fusioncharts.js"></script>
 </body>
 </html>

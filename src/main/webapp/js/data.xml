@@ -1,0 +1,22 @@
+<chart manageresize="1" bgcolor="000000" bgalpha="100"
+	canvasborderthickness="1" canvasbordercolor="008040" canvasbgcolor="000000"
+	yaxismaxvalue="100" decimals="0" numdivlines="9" numvdivlines="28"
+	numdisplaysets="30" divlinecolor="008040" vdivlinecolor="008040"
+	divlinealpha="100" chartleftmargin="10" basefontcolor="00dd00"
+	showrealtimevalue="0" datastreamurl="/DataProviders/RealTimeLine1.php"
+	refreshinterval="2" numbersuffix="%" labeldisplay="rotate" slantlabels="1"
+	tooltipbgcolor="000000" tooltipbordercolor="008040" basefontsize="11"
+	showalternatehgridcolor="0" legendbgcolor="000000" legendbordercolor="008040"
+	legendpadding="35" showlabels="1" showborder="0">
+	<categories>
+		<category label="Start" />
+	</categories>
+	<dataset color="00dd00" seriesname="Processor A" showvalues="0"
+		alpha="100" anchoralpha="0" linethickness="2">
+		<set value="0" />
+	</dataset>
+	<dataset color="ff5904" seriesname="Processor B" showvalues="0"
+		alpha="100" anchoralpha="0" linethickness="2">
+		<set value="0" />
+	</dataset>
+</chart>
