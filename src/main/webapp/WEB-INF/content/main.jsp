@@ -6,7 +6,7 @@
 <html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>春运余票查询</title>
 <link rel="stylesheet" href="${ctx}/css/ticket.css"/>
 <script type="text/javascript">var ctx = '${ctx}';</script>
 </head>

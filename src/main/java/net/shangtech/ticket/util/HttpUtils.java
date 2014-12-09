@@ -11,8 +11,12 @@ import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.conn.ssl.SSLContextBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HttpUtils {
+	
+	private static final Logger logger = LoggerFactory.getLogger(HttpUtils.class);
 	
 	public static String get(HttpClient client, String url){
 		HttpGet get = new HttpGet(url);
@@ -21,7 +25,9 @@ public class HttpUtils {
 			response = client.execute(get);
 			HttpEntity entity = response.getEntity();
 			if(entity != null){
-				return IOUtils.toString(entity.getContent());
+				String result = IOUtils.toString(entity.getContent(), "UTF-8");
+				logger.info(result);
+				return result;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
